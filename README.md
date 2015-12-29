@@ -1,5 +1,5 @@
 # Example of linear regression in R
-<i>#Set your working directory path to whatever folder you like.</i><br>
+<i>#Set your working directory path to whatever folder you like. Use double backslash.</i><br>
 setwd("C:\\Users\\Rebecca Merrett\\Documents\\r-workspace\\RebeccaSpace")<br>
 getwd()<br>
 data(airquality)<br>
