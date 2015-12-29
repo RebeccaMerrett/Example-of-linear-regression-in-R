@@ -1,9 +1,9 @@
-#Set your working directory path to whatever folder you like
+#Set your working directory path to whatever folder you like.
 setwd("C:\\Users\\Rebecca Merrett\\Documents\\r-workspace\\RebeccaSpace")
 getwd()
 data(airquality)
 head(airquality)
-#Check for missing values and see if need to treat them accordingly. Also if there are categorical type variables (including age groups or number groups), need to set as factors.
+#Check for missing values and see if need to treat them accordingly. Also if there are categorical type variables (including age groups), need to set as factors.
 #I noticed I could not get Rsquared on testset when included missing values.
 airquality <- na.exclude(airquality)
 #na.exclude leaves out rows with missing values, but keeps track of where they were so that when making predictions a vector will be the same length of the actual response.
