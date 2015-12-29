@@ -25,7 +25,7 @@ summary(OzoneModel)
 plot(OzoneModel)
 #Might want to do an ANOVA/F-test to see if adding more predictors makes a difference or not, looking at lm model with say all predictors.
 #This anova(Model1, Model2) comparison looks at p-value against significance 0.05 to accept or reject null hypothesis of a noticeable difference or not.
-#Now test the model against the test set.
+#Now test the model against the test set, and minus the first column or response (Ozone).
 ModelPredictions <- predict(OzoneModel, newdata=airqualityTest[ ,-1],type="response", se.fit=TRUE)
 head(ModelPredictions$fit)
 head(airqualityTest$Ozone)
